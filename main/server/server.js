@@ -17,3 +17,6 @@ app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
 
+// users route into main server (server.js)
+const usersRouter = require('./routes/users');
+app.use('/api/users', usersRouter);
